@@ -1,9 +1,19 @@
 # README
 
- [] To be able to upload a file
+## Feature List
+
+### MVP
+ [] A user should be able to upload a file
+ [] A user should be able to see a full list of all the uploaded files
+ [] A user should be able to download a file
+
+### S3
+ [] All the files should be stored on S3
+ [] Uploads and downloads should circumvent our servers and go directly to S3 using pre-signed URLs
  
- [] To be able to upload a file to S3
- [] To be able to download a file to S3
+### Programmatic
+ [] A user should be able to upload a file via `curl --upload-file`
+ [] A user should be able to download files via curl
 
 ---
 
