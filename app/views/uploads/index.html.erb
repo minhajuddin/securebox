@@ -1,0 +1,17 @@
+<h1>Upload a file</h1>
+
+<%= form_tag "/uploads", multipart: true do %>
+  <input type="file" name="file" />
+  <input type="submit" value="Upload file" />
+<% end %>
+
+<h1>Uploads</h1>
+
+<ul>
+<% @uploads.each do |upload| %>
+<li>
+  <a href="/download/<%= upload.id %>"><%= upload.meta["original_filename"] %></a>
+</li>
+<% end %>
+</ul>
+
