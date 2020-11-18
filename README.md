@@ -15,6 +15,9 @@
  [] A user should be able to upload a file via `curl --upload-file`
  [] A user should be able to download files via curl
 
+### Security
+ [] Set up authentication via okta
+
 ---
 
 This README would normally document whatever steps are necessary to get the
